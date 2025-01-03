@@ -1,0 +1,18 @@
+The solution involves using a more specific selector to ensure the :hover style applies correctly.
+```css
+div {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+}
+div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral;
+}
+div:hover a {
+  background-color: lightgreen;
+} 
+```
+This corrected code targets the `<a>` element only when its parent `<div>` is hovered, resolving the issue.
