@@ -1,0 +1,16 @@
+The following CSS code snippet exhibits unexpected behavior in some browsers.  The `:hover` pseudo-class styling is not applied correctly to the nested `<a>` element when hovering over the parent `<div>`. 
+```css
+div {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+}
+div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral;
+}
+div a:hover {
+  background-color: lightgreen;
+}
